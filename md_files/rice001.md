@@ -1,8 +1,9 @@
 # Rice 
+As a cereal grain domesticated rice is the most widely consumed staple food for over half of the world's human population especially in Asia and Africa. It is the agricultural commodity with the third-highest worldwide production after sugarcane and maize.
 ## Choice of Location 
 Low-lying areas that remain flooded 
 ## Weather Requirements 
-Rice crop needs a hot and humid climate. It is best suited to regions which have high humidity, prolonged sunshine and an assured supply of water. The average temperature required throughout the life period of the crop ranges from 21 to 37º C 
+Rice crop needs a hot and humid climate. It is best suited to regions which have high humidity, prolonged sunshine and an assured supply of water. The average temperature required throughout the life period of the crop ranges from 21 to 37ï¿½ C 
 ## Culitvation 
   - ### Soil Preperation 
     Clay or clay loams are most suited for rice cultivation. Such soils are capable of holding water for long and sustain crop. Rice being a semi-aquatic crop, grows best under sub-merge conditions. Rice is cultivated in almost all types of soils with varying productivity. 
