@@ -1,4 +1,5 @@
 # Apple 
+An apple is an edible fruit produced by an apple tree
 ## Choice of Location 
 The best placement for a single tree or a grove of apple trees is in full sun, in well-drained soil, away from other trees and outside of any low-lying area that could form a "frost pocket" where cold air settles. 
 ## Weather Requirements 
@@ -7,7 +8,7 @@ The average summer temperature should be around 21-24oC during active growth per
   - ### Soil Preparation 
     Soil preparation can be done at any time of year that the ground is not overly saturated with water or frozen. \n Your lawn can provide you with ideal organic materials such as grass clippings and shredded leaves. Not only will the grass and leaves break down to provide soil nutrients naturally, but they will help loosen the soil as well. You can gather these in the fall with spring planting in mind.\n Adding organic materials like compost will improve the composition of most every soil type. Organic materials bind sandy soil particles so they retain moisture and nutrients better. They also break apart clay and silt particles, so that water can soak in and roots can spread. 
   - ### Seeding 
-    After a minimum of 6 weeks in a moist paper towel in the refrigerator, you can plant apple seeds just as you would any other seed.  They can be direct seeded outdoors if it’s after last spring frost and the soil can be worked.  Since germination rates are low, and predation from squirrels, mice, and voles can be an issue early on, we generally sprout them in pots. 
+    After a minimum of 6 weeks in a moist paper towel in the refrigerator, you can plant apple seeds just as you would any other seed.  They can be direct seeded outdoors if itï¿½s after last spring frost and the soil can be worked.  Since germination rates are low, and predation from squirrels, mice, and voles can be an issue early on, we generally sprout them in pots. 
   - ### Planting 
     The best time to plant apple trees is in the spring, like all other fruit trees, though the fall can work with the understanding that there are risks if there's a harsh winter ahead. Don't focus on frost dates in the early spring and late winter. 
   - ### Careing 
