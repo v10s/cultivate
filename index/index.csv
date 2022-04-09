@@ -1,2 +1,4 @@
 name, description, file_name, image
-wheate, wheat is a crop, wheat001.md, NULL
+wheat, wheat is a crop, wheat001.md, NULL
+apple,An apple is an edible fruit produced by an apple tree,apple001.md,NULL
+
