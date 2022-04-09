@@ -1,0 +1,43 @@
+
+<div fxLayout="column" fxLayoutAlign="center center">
+
+	<div fxLayout="column" fxLayoutAlign="center center" [style.marginTop]="search_box_margin_top">
+
+
+    <h1 mat-display-1>{{app_name}}</h1>
+<!--    <p>{{ md_data }}fdsgdfgd</p>-->
+    <mat-form-field appearance="outline">
+   		<mat-label>Search</mat-label>
+   		<input #search_input matInput placeholder="Search..." (keyup)="search_in_index(search_input.value)" >
+
+    </mat-form-field>
+  </div>
+
+<!--  <div *ngFor="let md_url of md_block_urls">-->
+
+
+<!--    <div [innerHTML]="html_data">-->
+
+<!--    </div>-->
+<!--  </div>-->
+
+  <div [style.overflowY]="'auto'" [style.height]="'700px'" [style.width]="'80%'"  fxLayout="column" fxLayoutAlign="center center">
+    <div *ngFor="let line of index" >
+       
+        <mat-card [routerLink]="'/information/'+line.split(',')[2].trim()" *ngIf="line != '' || line != ''" class="example-card" [style.width]="'500px'" matRipple [style.backgroundColor]="'rgba(0,0,0,.1)'">
+          <mat-card-title-group>
+            <mat-card-title>{{ line.split(',')[0] }}</mat-card-title>
+
+          </mat-card-title-group>
+          <mat-card-content>
+            {{ line.split(',')[1] }}
+          </mat-card-content>
+        </mat-card>
+        <br>
+      
+    
+    </div>
+  </div>
+
+
+  </div>
