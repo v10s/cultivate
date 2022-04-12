@@ -1,8 +1,17 @@
 
-<div fxLayout="column" fxLayoutAlign="end center" [style.height]="'100%'" [style.width]="'100%'">
-    <div fxLayout="row" fxLayoutAlign="center start" [style.height]="'720px'" [style.overflowY]="'auto'" [style.marginBottom]="'10px'">
+<div fxLayout="column" fxLayoutAlign="end center" [style.height]="'100%'" [style.width]="'100%'" [style.maginTop]="'10px'">
+
+    <h1 mat-display-1 >{{app_name}}</h1>
+
+    <div fxLayout="row" fxLayoutAlign="center start" >
+        <div  [style.minWidth]="'500px'" [style.maxWidth]="'80%'" [style.color]="'white'" [style.backgroundColor]="'rgba(0,0,0,.3)'" 
+        [style.padding]="'15px'" [style.borderRadius]="'30px'" [style.marginBottom]="'10px'"
         
-        <div [innerHTML]="html_data" [style.minWidth]="'500px'">
+        >
+
+            <div [style.height]="'720px'" [style.overflowY]="'auto'"  [innerHTML]="html_data">
+
+            </div>
     
         </div>
 

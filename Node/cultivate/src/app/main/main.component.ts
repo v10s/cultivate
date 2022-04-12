@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GetDataService } from '../services/get-data.service';
 import { marked } from 'marked';
+import { ConnectableObservable } from 'rxjs';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -13,8 +14,8 @@ export class MainComponent implements OnInit {
 	md_block_urls : any = ['sdfsadf'];
 
 	index : any[] = [];
-  searched_index = []
-  favourites_index = []
+  searched_index : any[] = []
+  favourites_index : any[] = []
 
   constructor(
     private getDataService: GetDataService,
@@ -27,20 +28,28 @@ export class MainComponent implements OnInit {
   this.getDataService.getIndexDatFromURL("https://raw.githubusercontent.com/v10s/cultivate/main/index/index.csv")
   .subscribe(
   response => {
-    this.index = this.populate_index(response);
+    this.index = this.populate_index_with_zero_similarity(response);
+    this.searched_index = this.index;
+    
   }
   );
 
-  this.search_in_index("sf1");
 
   }
 
-  populate_index(response:any){
-
+  populate_index_with_zero_similarity(response:any){
+    var index_with_zero_similarity = []
     var lines = response.split('\n').slice(1);
-    console.log(lines);
 
-    return lines;
+    for (var line of lines){
+      if(line.trim() != "" && line != null && line != undefined){
+        console.log(line);
+
+      index_with_zero_similarity.push([line, 0])
+    }
+    }
+    console.log(index_with_zero_similarity)
+    return index_with_zero_similarity;
     
   }
 
@@ -55,9 +64,10 @@ export class MainComponent implements OnInit {
   search_in_index(search_string : any){
     var index_similarity = [];
     for (let line of this.index){
-      line = line[0];
-      if (line != "" || line != null || line != undefined){
-        console.log(line);
+      line = line[0]
+      if (line != "" && line != null && line != undefined){
+        // line = line.split(',')[0];
+
         var line_similarity = [line, this.similarity(line.split(',')[0], search_string)];
         index_similarity.push(line_similarity);
       }
@@ -65,7 +75,8 @@ export class MainComponent implements OnInit {
     index_similarity = index_similarity.sort(function(a:any,b: any) {
       return a[1] - b[1];
     }).reverse();
-    this.index = index_similarity;
+    
+    this.searched_index = index_similarity;
   }
 
 // Similiar to Levenshtein distance

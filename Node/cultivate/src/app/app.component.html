@@ -497,9 +497,21 @@
 
 <div [ngStyle]="{'background' : 'url(./assets/wheat-1845835_1920.jpg)', 'background-attachment': 'fixed'}" [style.height]="'100%'" >
 
+  
   <router-outlet ></router-outlet>
 
-
+  <div class="nav-bar" [style.width]="'100%'">
+    <div fxLayout="row" fxLayoutAlign="end center" [style.width]="'100%'">
+      
+      <div class="nav-background" fxLayout="row" fxLayoutAlign="center center" >
+        <button mat-icon-button color="accent" [routerLink]="'/'">
+          <mat-icon>home</mat-icon>
+        </button>
+      </div>
+      
+    
+    </div>
+  </div>
 </div>
 
 
