@@ -1,6 +1,6 @@
 # Plant
 
-Tempratue needs
+Temperatue needs
 
 Rainfall needs
 
